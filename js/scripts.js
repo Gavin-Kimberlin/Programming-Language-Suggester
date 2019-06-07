@@ -2,7 +2,7 @@ $(document).ready(function () {
   $('form#quiz').submit(function (event) {
     event.preventDefault();
     var answers = $(this).serializeArray();
-    var scrores = {
+    var scores = {
       javaScript: 0,
       ruby: 0,
       cSharp: 0,
