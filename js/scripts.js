@@ -13,11 +13,15 @@ $(document).ready(function () {
       scores[answer.value] += 1;
     }
 
-    var maxLanguage = 'cat';
+    var maxLanguage = 'javaScript';
     for (var language in scores) {
       if (scores[language] > scores[maxLanguage]) {
         maxLanguage = language;
+        console.log();
       }
     }
+
+    $('form#quiz').css('display', 'none');
+    $('.result#' + maxLanguage).css('display', 'block');
   });
 });
