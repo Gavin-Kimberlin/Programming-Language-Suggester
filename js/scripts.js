@@ -20,8 +20,7 @@ $(document).ready(function () {
         console.log();
       }
     }
-
-    $('form#quiz').css('display', 'none');
-    $('.result#' + maxLanguage).css('display', 'block');
+    $('form#quiz').hide();
+    $('.result#' + maxLanguage).show()
   });
 });
